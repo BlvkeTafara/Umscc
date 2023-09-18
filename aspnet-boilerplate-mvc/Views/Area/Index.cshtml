@@ -1,0 +1,40 @@
+﻿@model IEnumerable<aspnet_boilerplate_mvc.Entities.Area>
+
+@{
+    ViewData["Title"] = "Areas";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Areas</li>
+    </ol>
+</nav>
+
+<h2>Areas</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var area in Model)
+        {
+            <tr>
+                <td>@area.Id</td>
+                <td>@area.Name</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Area", new { id = area.Id })">Edit</a> |
+                    <a href="@Url.Action("Delete", "Area", new { id = area.Id })">Delete</a> |
+                    <a href="@Url.Action("Details", "Area", new { id = area.Id })">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Area")" class="btn btn-primary">Create New Area</a>

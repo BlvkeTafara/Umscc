@@ -1,0 +1,58 @@
+﻿@model aspnet_boilerplate_mvc.Entities.AbstractionSetting
+
+@{
+    ViewBag.Title = "Edit Abstraction Setting";
+}
+
+<div class="breadcrumbs">
+    @Html.ActionLink("Home", "Index", "Home")
+    <span> &gt; </span>
+    @Html.ActionLink("Abstraction Settings", "Index")
+    <span> &gt; </span>
+    <span>Edit</span>
+</div>
+
+<h1>Edit Abstraction Setting</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PermitType)
+        @Html.TextBoxFor(model => model.PermitType, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PermitType, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Purpose)
+        @Html.TextBoxFor(model => model.Purpose, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Purpose, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UnitOfMeasurement)
+        @Html.TextBoxFor(model => model.UnitOfMeasurement, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.UnitOfMeasurement, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Value)
+        @Html.TextBoxFor(model => model.Value, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Value, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Period)
+        @Html.TextBoxFor(model => model.Period, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Period, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

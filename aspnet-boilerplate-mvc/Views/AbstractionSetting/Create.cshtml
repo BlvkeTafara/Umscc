@@ -1,0 +1,56 @@
+﻿@model aspnet_boilerplate_mvc.Entities.AbstrationSetting
+
+@{
+}
+<div class="breadcrumbs">
+    @Html.ActionLink("Home", "Index", "Home")
+    <span> &gt; </span>
+    @Html.ActionLink("Abstraction Settings", "Index")
+    <span> &gt; </span>
+    <span>Create</span>
+</div>
+
+<h1>Create Abstraction Setting</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label>Permit Type</label>
+        @Html.DropDownListFor(model => model.PermitTypeId, ViewBag.PermitTypes as SelectList, "Select Permit Type", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PermitTypeId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label>Purpose</label>
+        @Html.DropDownListFor(model => model.PurposeId, ViewBag.Purposes as SelectList, "Select Purpose", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PurposeId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label>Unit of Measurement</label>
+        @Html.DropDownListFor(model => model.UomId, ViewBag.Uoms as SelectList, "Select Unit of Measurement", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.UomId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label>Value</label>
+        @Html.TextBoxFor(model => model.Value, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Value, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label>Period</label>
+        @Html.TextBoxFor(model => model.Period, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Period, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

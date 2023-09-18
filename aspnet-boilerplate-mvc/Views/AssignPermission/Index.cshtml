@@ -1,0 +1,92 @@
+﻿@using aspnet_boilerplate_mvc.Entities;
+@{
+    ViewData["Title"] = "Assign Permissions";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+@model AssignPermissionModel
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Roles</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">@Model.role.Name</div>
+                <div class="card-body">
+                   <table class="table table-bordered">
+                       <thead>
+                           <tr>
+                               <th>Module</th>
+                               <th class="text-right">
+                                    <a class="btn btn-sm btn-success" asp-controller="AssignPermission" asp-action="AssignAll" asp-route-roleId="@Model.role.Id">Assign All</a>
+                               </th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                            @if (Model.modules.Count > 0)
+                            {
+                                @foreach (var item in Model.modules)
+                                {
+                                    <tr>
+                                        <td>@item.Name</td>
+                                        <td>
+                                            <table class="table table-bordered">
+                                               <tbody>
+                                                    @if (item.submodules.Count() > 0)
+                                                    {
+                                                        @foreach (var item2 in item.submodules)
+                                                        {
+                                                            <tr>
+                                                                <td>@item2.Name</td>
+                                                                <td>
+                                                                    <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            @if (item2.Permissions.Count() > 0)
+                                                                            {
+                                                                              @foreach (var item3 in item2.Permissions)
+                                                                                {
+                                                                                  <tr>
+                                                                                      <td>@item3.Name</td>
+                                                                                      <td  class="text-right">
+                                                                                            @if (item3.rolepermissions.Count() > 0)
+                                                                                            {
+                                                                                                <a class="btn btn-sm btn-danger" asp-controller="AssignPermission" asp-action="Assign" asp-route-roleId="@Model.role.Id" asp-route-permissionId="@item3.Id" asp-route-instruction="REMOVE">Remove</a>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <a class="btn btn-sm btn-success" asp-controller="AssignPermission" asp-action="Assign" asp-route-roleId="@Model.role.Id" asp-route-permissionId="@item3.Id" asp-route-instruction="ASSIGN">Assign</a>
+                                                                                            }
+                                                                                        </td>
+                                                                                  </tr>  
+                                                                                }  
+                                                                            }
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                       
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                }
+                              
+                            }
+                        </tbody>
+                   </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

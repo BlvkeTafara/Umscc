@@ -1,0 +1,56 @@
+﻿@using aspnet_boilerplate_mvc.Entities;
+@{
+    ViewData["Title"] = "Roles";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+   
+}
+@model List<Role>
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Roles</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">Modules</div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr><th>Name</th><th>Level</th><th class="text-right"><a asp-controller="Role" asp-action="Modify" class="btn btn-primary"><i class="bi bi-plus"></i>Add Role</a></th></tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.Count > 0)
+                            {
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Name</td>
+                                        <td>@item.Level</td>
+                                        <td class="d-flex justify-content-end">
+                                            <a asp-controller="Role" asp-action="Modify" asp-route-id="@item.Id" class="btn btn-sm btn-info"><i class="bi bi-pencil-fill"></i> Edit</a>
+                                            <a asp-controller="Role" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger mx-1"><i class="bi bi-trash-fill"></i> Delete</a>
+                                            <a asp-controller="AssignPermission" asp-action="Index" asp-route-roleId="@item.Id" class="btn btn-sm btn-warning mx-1"><i class="bi bi-shield-lock"></i> Permissions</a>
+
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr><td colspan="2" class="text-center text-danger">No records found</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

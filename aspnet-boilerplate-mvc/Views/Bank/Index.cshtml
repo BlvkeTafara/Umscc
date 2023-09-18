@@ -1,0 +1,47 @@
+﻿@model List<aspnet_boilerplate_mvc.Entities.Bank>
+
+@{
+    ViewData["Title"] = "Bank List";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+@section Breadcrumbs {
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Bank List</li>
+        </ol>
+    </nav>
+}
+
+<h2>Bank List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bank in Model)
+        {
+            <tr>
+                <td>@bank.Id</td>
+                <td>@bank.Name</td>
+                <td>@bank.Status</td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = bank.Id }) |
+                    @Html.ActionLink("Edit", "Edit", new { id = bank.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = bank.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

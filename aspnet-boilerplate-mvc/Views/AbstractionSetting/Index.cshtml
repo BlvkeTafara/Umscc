@@ -1,0 +1,47 @@
+﻿@model List<aspnet_boilerplate_mvc.Entities.AbstractionSetting>
+
+@{
+    ViewBag.Title = "Abstraction Settings";
+}
+
+<div class="breadcrumbs">
+    @Html.ActionLink("Home", "Index", "Home")
+    <span> &gt; </span>
+    <span>Abstraction Settings</span>
+</div>
+
+<h1>Abstraction Settings</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Permit Type</th>
+            <th>Purpose</th>
+            <th>Unit of Measurement</th>
+            <th>Value</th>
+            <th>Period</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var abstractionSetting in Model)
+        {
+            <tr>
+                <td>@abstractionSetting.PermitType</td>
+                <td>@abstractionSetting.Purpose</td>
+                <td>@abstractionSetting.UnitOfMeasurement</td>
+                <td>@abstractionSetting.Value</td>
+                <td>@abstractionSetting.Period</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = abstractionSetting.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = abstractionSetting.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = abstractionSetting.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @Html.ActionLink("Create New", "Create")
+</div>

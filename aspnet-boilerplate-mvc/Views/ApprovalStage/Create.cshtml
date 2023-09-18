@@ -1,0 +1,29 @@
+﻿@model aspnet_boilerplate_mvc.Entities.ApprovalStage
+
+@{
+    ViewData["Title"] = "Create Approval Stage";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", "ApprovalStage")">Approval Stages</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Create</li>
+    </ol>
+</nav>
+
+<h2>Create Approval Stage</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Name:</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Code:</label>
+        <input asp-for="Code" />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>

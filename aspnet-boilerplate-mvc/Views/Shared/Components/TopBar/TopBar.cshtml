@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using aspnet_boilerplate_mvc.Entities;
+@inject SignInManager<User> signInManager
+<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom-2">
+    <a class="navbar-brand p-2" asp-controller="Home" asp-action="Index"><img src="~/image/logo.jpg" width="100px" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <button type="button" id="sidebarCollapse" class="btn btn-text">
+        <i class="bi bi-list"></i>
+        <span class="sr-only">Toggle Menu</span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        @if (signInManager.IsSignedIn(User))
+        {
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Welcome :@User.Identity.Name
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" asp-controller="Profile" asp-action="Index">Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" asp-controller="Profile" asp-action="ChangePassword">Change Password</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a>
+                    </div>
+                </li>
+
+            </ul>
+        }
+    </div>
+</nav>

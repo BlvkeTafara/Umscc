@@ -1,0 +1,84 @@
+﻿@model aspnet_boilerplate_mvc.Entities.Borehole
+
+@{
+    ViewBag.Title = "Edit";
+    var breadcrumbs = ViewBag.Breadcrumbs as List<BreadcrumbsViewModel>;
+    var purposeList = ViewBag.PurposeList as SelectList;
+    var propertyInformationList = ViewBag.PropertyInformationList as SelectList;
+}
+
+@{
+    Html.RenderPartial("_Breadcrumbs", breadcrumbs);
+}
+
+<h2>Edit Borehole</h2>
+
+<form action="" method="post">
+    <input name="__RequestVerificationToken" type="hidden" value="[anti-forgery token]" />
+
+    <div class="form-group">
+        <label for="Bhnumber">Bhnumber</label>
+        <input class="form-control" type="text" id="Bhnumber" name="Bhnumber" value="[Bhnumber value]" />
+        <span class="field-validation-valid" data-valmsg-for="Bhnumber" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Gridreference">Gridreference</label>
+        <input class="form-control" type="text" id="Gridreference" name="Gridreference" value="[Gridreference value]" />
+        <span class="field-validation-valid" data-valmsg-for="Gridreference" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Latitude">Latitude</label>
+        <input class="form-control" type="text" id="Latitude" name="Latitude" value="[Latitude value]" />
+        <span class="field-validation-valid" data-valmsg-for="Latitude" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Longitude">Longitude</label>
+        <input class="form-control" type="text" id="Longitude" name="Longitude" value="[Longitude value]" />
+        <span class="field-validation-valid" data-valmsg-for="Longitude" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Depth">Depth</label>
+        <input class="form-control" type="text" id="Depth" name="Depth" value="[Depth value]" />
+        <span class="field-validation-valid" data-valmsg-for="Depth" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Sampling">Sampling</label>
+        <input class="form-control" type="text" id="Sampling" name="Sampling" value="[Sampling value]" />
+        <span class="field-validation-valid" data-valmsg-for="Sampling" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="PurposeId">PurposeId</label>
+        <select class="form-control" id="PurposeId" name="PurposeId">
+            <option value="">Select Purpose</option>
+            <!-- purposeList options here -->
+        </select>
+        <span class="field-validation-valid" data-valmsg-for="PurposeId" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="AbstractionRate">AbstractionRate</label>
+        <input class="form-control" type="text" id="AbstractionRate" name="AbstractionRate" value="[AbstractionRate value]" />
+        <span class="field-validation-valid" data-valmsg-for="AbstractionRate" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="PropertyInformationId">PropertyInformationId</label>
+        <select class="form-control" id="PropertyInformationId" name="PropertyInformationId">
+            <option value="">Select Property Information</option>
+            <!-- propertyInformationList options here -->
+        </select>
+        <span class="field-validation-valid" data-valmsg-for="PropertyInformationId" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<script src="/bundles/jqueryval"></script>

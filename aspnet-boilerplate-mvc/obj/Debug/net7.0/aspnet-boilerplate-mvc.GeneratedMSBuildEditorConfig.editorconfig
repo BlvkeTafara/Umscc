@@ -1,0 +1,269 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = aspnet_boilerplate_mvc
+build_property.RootNamespace = aspnet_boilerplate_mvc
+build_property.ProjectDir = C:\Users\Blvke\Desktop\anixsys-asp.net-mvc-boilerplate-main\aspnet-boilerplate-mvc\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Blvke\Desktop\anixsys-asp.net-mvc-boilerplate-main\aspnet-boilerplate-mvc
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/AbstractionSetting/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJzdHJhY3Rpb25TZXR0aW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/AbstractionSetting/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJzdHJhY3Rpb25TZXR0aW5nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/AbstractionSetting/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJzdHJhY3Rpb25TZXR0aW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/AbstractionSetting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJzdHJhY3Rpb25TZXR0aW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Account/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/ApprovalStage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwcm92YWxTdGFnZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/ApprovalStage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwcm92YWxTdGFnZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/ApprovalStage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwcm92YWxTdGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/ApprovalStage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwcm92YWxTdGFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/ApprovalStage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwcm92YWxTdGFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Area/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Area/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Area/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Area/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/AssignPermission/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduUGVybWlzc2lvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/BankAccount/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/BankAccount/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/BankAccount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/BankAccount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Bank/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Bank/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Bank/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Bank/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Bank/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Borehole/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZWhvbGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Borehole/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZWhvbGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Borehole/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZWhvbGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Borehole/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZWhvbGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Borehole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZWhvbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Currency/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY3lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Currency/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY3lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Currency/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY3lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Currency/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY3lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Module/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Module/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Module/Modify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlXE1vZGlmeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Permission/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Permission/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Permission/Modify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvblxNb2RpZnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Profile/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Role/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Role/Modify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxNb2RpZnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Shared/Components/SideBar/SideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2lkZUJhclxTaWRlQmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Shared/Components/TopBar/TopBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wQmFyXFRvcEJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Shared/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Submodule/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VibW9kdWxlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Submodule/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VibW9kdWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Submodule/Modify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VibW9kdWxlXE1vZGlmeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/User/Modify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNb2RpZnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/User/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Blvke/Desktop/anixsys-asp.net-mvc-boilerplate-main/aspnet-boilerplate-mvc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-687pg53zr4

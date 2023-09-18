@@ -1,0 +1,81 @@
+﻿@model aspnet_boilerplate_mvc.Entities.Borehole
+
+@{
+    ViewBag.Title = "Create";
+    var purposeList = ViewBag.PurposeList as SelectList;
+    var propertyInformationList = ViewBag.PropertyInformationList as SelectList;
+}
+    <div class="container">
+        <h2>Create Borehole</h2>
+
+        <form asp-action="Create" asp-controller="Borehole" method="post">
+            <input name="__RequestVerificationToken" type="hidden" value="[anti-forgery token]" />
+
+            <div class="form-group">
+                <label asp-for="Bhnumber">Bhnumber</label>
+                <input class="form-control" asp-for="Bhnumber" />
+                <span asp-validation-for="Bhnumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Gridreference">Grid Reference</label>
+                <input class="form-control" asp-for="Gridreference" />
+                <span asp-validation-for="Gridreference" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Latitude">Latitude</label>
+                <input class="form-control" asp-for="Latitude" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Longitude">Longitude</label>
+                <input class="form-control" asp-for="Longitude" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Depth">Depth</label>
+                <input class="form-control" asp-for="Depth" />
+                <span asp-validation-for="Depth" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Sampling">Sampling</label>
+                <input class="form-control" asp-for="Sampling" />
+                <span asp-validation-for="Sampling" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PurposeId">PurposeId</label>
+                <select class="form-control" asp-for="PurposeId" asp-items="ViewBag.PurposeList" required>
+                    <option value="">Select Purpose</option>
+                </select>
+                <span asp-validation-for="PurposeId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AbstractionRate">Abstraction Rate</label>
+                <input class="form-control" asp-for="AbstractionRate" />
+                <span asp-validation-for="AbstractionRate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PropertyInformationId">Property Information Id</label>
+                <select class="form-control" asp-for="PropertyInformationId" asp-items="ViewBag.PropertyInfoList" required>
+                    <option value="">Select Property Information</option>
+                </select>
+                <span asp-validation-for="PropertyInformationId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>

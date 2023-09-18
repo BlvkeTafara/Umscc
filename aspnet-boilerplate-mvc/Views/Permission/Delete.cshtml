@@ -1,0 +1,50 @@
+﻿@using aspnet_boilerplate_mvc.Entities;
+@model Permission
+@{
+    ViewData["Title"] = "Delete Module";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-controller="Permission" asp-action="Index" asp-route-id="@Model.SubmoduleId">Permissions</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Modify Permission</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="col-md-6 offset-md-3">
+        <form method="post">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class=card-title>Delete Module</h4>
+                    <hr />
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input asp-for="Name" readonly class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+                <input type="hidden" asp-for="@Model.SubmoduleId"/>
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-controller="Module" asp-action="Index" class="btn btn-outline-danger"> Back</a>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+ </div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+ }

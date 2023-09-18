@@ -1,0 +1,46 @@
+﻿@model aspnet_boilerplate_mvc.Entities.BankAccount
+
+@{
+    ViewData["Title"] = "Edit Bank Account";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+@section Breadcrumbs {
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "BankAccount")">Bank Accounts</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Details", "BankAccount", new { id = Model.Id })">Bank Account Details</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit Bank Account</li>
+        </ol>
+    </nav>
+}
+
+<h2>Edit Bank Account</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Account Number:</label>
+        <input asp-for="AccountNumber" />
+    </div>
+    <div>
+        <label>Bank ID:</label>
+        <input asp-for="BankId" />
+    </div>
+    <div>
+        <label>Currency ID:</label>
+        <input asp-for="CurrencyId" />
+    </div>
+    <div>
+        <label>Type:</label>
+        <input asp-for="Type" />
+    </div>
+    <div>
+        <label>Status:</label>
+        <input asp-for="Status" />
+    </div>
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>

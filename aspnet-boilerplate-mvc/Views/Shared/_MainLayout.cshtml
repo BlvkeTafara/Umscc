@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"]</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="~/css/style.css">
+	<link rel="stylesheet" href="~/css/toastr.min.css" asp-append-version="true" />
+	
+
+
+</head>
+<body>
+
+	<div class="wrapper d-flex align-items-stretch">
+		@(await Component.InvokeAsync("SideBar"))
+		<!-- Page Content  -->
+		
+		<div id="content">
+			@(await Component.InvokeAsync("TopBar"))
+			<partial name="_Notification" />
+			@RenderBody()
+	    </div>
+	</div>
+
+	<script src="~/js/jquery.min.js"></script>
+	<script src="~/js/popper.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	<script src="~/js/main.js"></script>
+	<script src="~/js/toastr.min.js"></script>
+	<script src="~/js/apechart.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

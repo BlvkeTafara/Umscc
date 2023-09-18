@@ -1,0 +1,57 @@
+﻿@using aspnet_boilerplate_mvc.Entities;
+@{
+    ViewData["Title"] = "Modules";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+   
+}
+@model Module
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-controller="Module" asp-action="Index">Modules</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sub-Modules</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">@Model.Name Submodules</div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr><th>Name</th><th>Controller</th><th>Default Permission</th><th class="text-right"><a asp-controller="Submodule" asp-action="Modify" asp-route-moduleId="@Model.Id" class="btn btn-primary"><i class="bi bi-plus"></i>Add Submodule</a></th></tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.submodules.Count > 0)
+                            {
+                                @foreach (var item in Model.submodules)
+                                {
+                                    <tr>
+                                        <td><i class="@item.Icon mr-2"></i>@item.Name</td>
+                                        <td>@item.Controller</td>
+                                        <td>@item.DefaultAction</td>
+                                        <td class="d-flex justify-content-end">
+                                            <a asp-controller="Submodule" asp-action="Modify" asp-route-id="@item.Id" class="btn btn-sm btn-info"><i class="bi bi-pencil-fill"></i> Edit</a>
+                                            <a asp-controller="Submodule" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger mx-1"><i class="bi bi-trash-fill"></i> Delete</a>
+                                            <a asp-controller="Permission" asp-action="Index" asp-route-id="@item.Id" class="btn btn-sm btn-warning mx-1"><i class="bi bi-file-lock2-fill"></i> Permissions</a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr><td colspan="4" class="text-center text-danger">No records found</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

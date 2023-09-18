@@ -1,0 +1,50 @@
+﻿@model aspnet_boilerplate_mvc.Entities.AbstractionSetting
+
+@{
+    ViewBag.Title = "Delete Abstraction Setting";
+}
+
+<div class="breadcrumbs">
+    @Html.ActionLink("Home", "Index", "Home")
+    <span> &gt; </span>
+    @Html.ActionLink("Abstraction Settings", "Index")
+    <span> &gt; </span>
+    <span>Delete</span>
+</div>
+
+<h1>Delete Abstraction Setting</h1>
+
+<div>
+    <h4>Are you sure you want to delete this abstraction setting?</h4>
+    <h2>@Model.Id</h2>
+    <div>
+        <strong>Permit Type:</strong>
+        <span>@Model.PermitType</span>
+    </div>
+    <div>
+        <strong>Purpose:</strong>
+        <span>@Model.Purpose</span>
+    </div>
+    <div>
+        <strong>Unit of Measurement:</strong>
+        <span>@Model.UnitOfMeasurement</span>
+    </div>
+    <div>
+        <strong>Value:</strong>
+        <span>@Model.Value</span>
+    </div>
+    <div>
+        <strong>Period:</strong>
+        <span>@Model.Period</span>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <input type="submit" value="Delete" class="btn btn-danger" />
+            @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-secondary" })
+        </div>
+    }
+</div>

@@ -1,0 +1,55 @@
+﻿@using aspnet_boilerplate_mvc.Entities;
+@model User
+@{
+    ViewData["Title"] = "Delete Role";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-controller="User" asp-action="Index">Roles</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Delete User</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="col-md-6 offset-md-3">
+        <form method="post">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class=card-title>Delete Role</h4>
+                    <hr />
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input asp-for="Name" readonly class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>Surname</label>
+                        <input asp-for="Surname" readonly class="form-control" />
+                        <span asp-validation-for="Surname" class="text-danger"></span>
+                    </div>
+                </div>
+                <input type="hidden" asp-for="Id"/>         
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-controller="Role" asp-action="Index" class="btn btn-outline-danger"> Back</a>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+ }

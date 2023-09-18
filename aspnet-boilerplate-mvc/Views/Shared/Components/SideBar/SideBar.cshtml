@@ -1,0 +1,39 @@
+﻿@model UserProfileViewModel
+<nav id="sidebar">
+		<div class="p-2 pt-1">
+		<ul class="list-unstyled components mb-5">
+			@if (Model.systemmodules.Count > 0)
+			{
+				@foreach (var item in Model.systemmodules)
+				{
+					@if (Model.signInManager.IsSignedIn(User) && User.IsInRole(item.DefaultAction))
+					{
+						<li class="active">
+					<a href="#@item.Name" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="@item.Icon mr-1"></i>@item.Name</a>
+					<ul class="collapse list-unstyled" id="@item.Name">
+					 @if(item.submodules.Count>0)
+					 {
+									
+						 @foreach (var item2 in item.submodules)
+								{
+										@if (Model.signInManager.IsSignedIn(User) && User.IsInRole(item2.DefaultAction))
+										{
+
+									<li>
+										<a asp-controller="@item2.Controller" asp-action="Index"><i class="@item2.Icon mr-2"></i>@item2.Name</a>
+									</li>
+								       }
+									}
+							
+					 }
+					
+				</ul>
+			</li>
+					}
+				}
+			}
+		</ul>
+
+
+	</div>
+</nav>

@@ -1,0 +1,81 @@
+﻿@using aspnet_boilerplate_mvc.Entities;
+@model UserProfileModel
+@{
+    ViewData["Title"] = "Update User Profile";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="col-md-6 offset-md-3">
+        <form method="post" asp-action="UpdateProfile">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class=card-title>User Profile</h4>
+                    <hr />
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label>Name</label>
+                            <input asp-for="@Model.Name" class="form-control" />
+                            <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-6">
+                            <label>Surname</label>
+                            <input asp-for="@Model.Surname" class="form-control" />
+                            <span asp-validation-for="@Model.Surname" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label>Email</label>
+                            <input asp-for="@Model.Email" class="form-control" />
+                            <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                        </div>
+                        <div class="col-6">
+                            <label>Phonenumber</label>
+                            <input asp-for="@Model.Phone" class="form-control" />
+                            <span asp-validation-for="@Model.Phone" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                           <div class="col-12">
+                            <label>Select Gender</label>
+                            <select asp-for="@Model.Gender" class="form-control">
+                                <option value="M">M</option>
+                                <option value="F">F</option>
+
+                            </select>
+                            <span asp-validation-for="@Model.Gender" class="text-danger"></span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <input type="hidden" asp-for="@Model.Id" />
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-danger"> Back</a>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+ }
+

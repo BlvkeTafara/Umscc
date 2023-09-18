@@ -1,0 +1,25 @@
+﻿@model aspnet_boilerplate_mvc.Entities.Area
+
+@{
+    ViewData["Title"] = "Area Details";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", "Area")">Areas</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Details</li>
+    </ol>
+</nav>
+
+<h2>Area Details</h2>
+
+<div>
+    <h4>Area Details</h4>
+    <dl class="dl-horizontal">
+        <dt>ID:</dt>
+        <dd>@Model.Id</dd>
+        <dt>Name:</dt>
+        <dd>@Model.Name</dd>
+    </dl>
+</div>

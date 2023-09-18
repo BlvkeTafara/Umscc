@@ -1,0 +1,32 @@
+﻿@model aspnet_boilerplate_mvc.Entities.Currency
+
+@{
+    ViewData["Title"] = "Create Currency";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+@section Breadcrumbs {
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Currency")">Currencies</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Create Currency</li>
+        </ol>
+    </nav>
+}
+
+<h2>Create Currency</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Name:</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Code:</label>
+        <input asp-for="Code" />
+    </div>
+    <div>
+        <button type="submit">Create</button>
+    </div>
+</form>

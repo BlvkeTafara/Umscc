@@ -1,0 +1,42 @@
+﻿@model IEnumerable<aspnet_boilerplate_mvc.Entities.ApprovalStage>
+
+@{
+    ViewData["Title"] = "Approval Stages";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Approval Stages</li>
+    </ol>
+</nav>
+
+<h2>Approval Stages</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var approvalStage in Model)
+        {
+            <tr>
+                <td>@approvalStage.Id</td>
+                <td>@approvalStage.Name</td>
+                <td>@approvalStage.Code</td>
+                <td>
+                    <a href="@Url.Action("Edit", "ApprovalStage", new { id = approvalStage.Id })">Edit</a> |
+                    <a href="@Url.Action("Delete", "ApprovalStage", new { id = approvalStage.Id })">Delete</a> |
+                    <a href="@Url.Action("Details", "ApprovalStage", new { id = approvalStage.Id })">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "ApprovalStage")" class="btn btn-primary">Create New Approval Stage</a>

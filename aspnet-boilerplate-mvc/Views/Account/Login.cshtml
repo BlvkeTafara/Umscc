@@ -1,0 +1,38 @@
+﻿@model  AuthModel;
+<div class="row mt-5">
+
+    <div class="col-md-6 offset-md-3">
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <form method="post">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class=card-title>Login</h4>
+                    <hr />
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Password</label>
+                        <input asp-for="Password" type="password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                          <button type="submit" class="btn btn-block btn-primary">Login</button>
+
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+ </div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+ }

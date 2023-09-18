@@ -1,0 +1,37 @@
+﻿@model IEnumerable<aspnet_boilerplate_mvc.Entities.Currency>
+
+@{
+    ViewData["Title"] = "Currencies";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+@section Breadcrumbs {
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Currencies</li>
+        </ol>
+    </nav>
+}
+
+<h2>Currencies</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var currency in Model)
+        {
+            <tr>
+                <td>@currency.Id</td>
+                <td>@currency.Name</td>
+                <td>@currency.Code</td>
+            </tr>
+        }
+    </tbody>
+</table>

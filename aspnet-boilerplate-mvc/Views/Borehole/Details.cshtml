@@ -1,0 +1,61 @@
+﻿@model aspnet_boilerplate_mvc.Entities.Borehole
+
+@{
+    ViewData["Title"] = "Borehole Details";
+}
+
+<div class="container">
+    <h2>Borehole Details</h2>
+
+    @if (Model == null)
+    {
+        <div class="alert alert-danger">
+            <p>Borehole not found.</p>
+        </div>
+    }
+    else
+    {
+        <table class="table table-bordered">
+            <tr>
+                <th>Bhnumber</th>
+                <td>@Html.DisplayFor(model => model.Bhnumber)</td>
+            </tr>
+            <tr>
+                <th>Gridreference</th>
+                <td>@Html.DisplayFor(model => model.Gridreference)</td>
+            </tr>
+            <tr>
+                <th>Latitude</th>
+                <td>@Html.DisplayFor(model => model.Latitude)</td>
+            </tr>
+            <tr>
+                <th>Longitude</th>
+                <td>@Html.DisplayFor(model => model.Longitude)</td>
+            </tr>
+            <tr>
+                <th>Depth</th>
+                <td>@Html.DisplayFor(model => model.Depth)</td>
+            </tr>
+            <tr>
+                <th>Sampling</th>
+                <td>@Html.DisplayFor(model => model.Sampling)</td>
+            </tr>
+            <tr>
+                <th>PurposeId</th>
+                <td>@Html.DisplayFor(model => model.PurposeId)</td>
+            </tr>
+            <tr>
+                <th>AbstractionRate</th>
+                <td>@Html.DisplayFor(model => model.AbstractionRate)</td>
+            </tr>
+            <tr>
+                <th>PropertyInformationId</th>
+                <td>@Html.DisplayFor(model => model.PropertyInformationId)</td>
+            </tr>
+        </table>
+    }
+
+    <p>
+        <a href="@Url.Action("Index")" class="btn btn-primary">Back to List</a>
+    </p>
+</div>
